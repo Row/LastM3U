@@ -1,0 +1,119 @@
+@charset "utf-8";
+body{
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 0.8em;
+    background-color: #E3E3E3;
+    margin: 10px;
+    color: #000000;
+}
+h1,h2,p {
+    margin: 5px;
+}
+#wrapper {
+    width: 790px;
+    margin: 0 auto 0 auto;
+    background: #FFF;
+    margin-bottom: 300px;
+    border-left: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+}
+#header {
+    border-bottom: 3px solid #CCCCCC;
+    margin: 0 0 10px 0;
+    padding: 5px;
+    background: #000;
+    color: #FFF;
+}
+#header h1 {
+    font-size: 200%;
+    font-weight: 800;
+}
+#form {
+    margin: 5px;
+}
+#form input[type=text], #form select {
+    border: 1px solid #C3C3C3;
+    width: 300px;
+    padding: 4px;
+}
+#form label {
+    font-size: 12px;
+}
+#form input[type=submit],#resultBox input[type=submit] {
+    font-size: 14px;
+    margin: 5px;
+    cursor: pointer;
+}
+#form td {
+    width: 170px;
+}
+#resultBox {
+    clear: both;
+    margin: 20px 0 0 0;
+
+}
+#loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 1000px;
+    height: 1000px;
+    background: #FFF url(images/ajax-loader.gif) no-repeat 50% 25%;
+}
+#resultBox {
+    display: none;
+}
+#resultBox ol ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#resultBox ol ol li {
+    font-size: 9px;
+    cursor: pointer;
+    margin: 2px 0 0 6px;
+    padding: 0 0 0 12px;
+    background: url(images/sel.png) no-repeat;
+    height:11px;
+    overflow:hidden;
+    white-space:nowrap;
+}
+#resultBox ol ol li:hover {
+       background-color: #CCC;
+
+}
+#resultBox .notsel {background: url(images/sel.png) no-repeat left bottom}
+.info {
+    background: #F8FABF;
+    padding: 3px;
+}
+strong {
+    display: block;
+}
+#varning {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    background: #FFF url(images/warning.png) no-repeat 30px 50%;
+    top: 22%;
+    padding-left: 100px;
+    border: 1px solid #000;
+    display: none;
+}
+#varning p {
+    margin: 10px;
+}
+#varning input {
+    margin-left: 100px;
+}
+#lastUpload {
+    display: none;
+}
+#footer {
+    clear: both;
+    text-align: right;
+    font-size: 70%;
+    border-top: 1px solid #8e8e8e;;
+    margin: 30px 0 0 0;
+}
